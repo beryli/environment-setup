@@ -34,7 +34,7 @@ This repository contains information on the settings, tools, and applications I 
 ### Installation
 To install Homebrew, follow these steps:
 - Open a macOS Terminal.
-- Paste the following command and press Enter to install Homebrew. This command will also install the Xcode Command Line Tools if they are not already installed.
+- Paste the following command and press Enter to install Homebrew. You may be prompted to enter your password for sudo access. This command will also install the Xcode Command Line Tools if they are not already installed.
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
@@ -83,6 +83,6 @@ brew bundle dump
 ```
 - To reinstall the same packages later, run the following command from the same folder where your Brewfile is located:
 ```sh
-brew bundle dump
+brew bundle
 ```
 [Download my minimal essential bundle](Brewfile)
