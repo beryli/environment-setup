@@ -27,3 +27,7 @@ For detailed instructions on setting up your Ubuntu environment, please refer to
 ## Mac Setup
 
 For detailed instructions on setting up your Mac environment, please refer to [mac-setup.md](mac-setup.md).
+
+## Cheatsheets
+
+Find detailed instructions on various commands in [cheatsheets.md](cheatsheets.md).

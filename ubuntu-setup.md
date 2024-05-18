@@ -69,19 +69,6 @@ Secure Shell (SSH) protocol allows secure command execution over an unsecured ne
 
 Note: The default SSH port is 22. Port configuration changes, including modifying the sshd_config file, are omitted here.
 
-## Git
-Git is a distributed version control system that tracks versions of files.
-### Config
-- `git config --global user.email "you@example.com"`
-- `git config --global user.name "Your Name"`
-### New Repo
-- `git init`
-- `git add --all`
-- `git commit -m "first commit"`
-- `git branch -M main`
-- `git remote add origin "URL"`
-- `git push -u origin main`
-
 ## GitHub
 ### SSH key
 To generate a new SSH key and add it to the ssh-agent, follow these steps (summarized from [GitHub documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux)):
