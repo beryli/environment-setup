@@ -71,7 +71,16 @@ Note: The default SSH port is 22. Port configuration changes, including modifyin
 
 ## Git
 Git is a distributed version control system that tracks versions of files.
-<!-- todo -->
+### Config
+- `git config --global user.email "you@example.com"`
+- `git config --global user.name "Your Name"`
+### New Repo
+- `git init`
+- `git add --all`
+- `git commit -m "first commit"`
+- `git branch -M main`
+- `git remote add origin "URL"`
+- `git push -u origin main`
 
 ## GitHub
 ### SSH key

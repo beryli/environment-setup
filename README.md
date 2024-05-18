@@ -8,7 +8,7 @@ This repository contains information on the settings, tools, and applications I 
 - [Mac Setup](#mac-setup)
 
 ## Virtual Machine Setup
-To set up a virtual machine:
+### Creating a new virtual machine:
 - Use UTM to virtualize or emulate.
 - Choose the operating system.
 - Specify the path of the ISO image.
@@ -16,8 +16,9 @@ To set up a virtual machine:
 - Set storage size.
 - Define shared directories (optional).
 - Review summary and name the virtual machine.
-
-For Retina Mode, navigate to Settings -> Display.
+### Setting
+- For Retina Mode, navigate to Settings -> Display.
+- [Headless mode](https://docs.getutm.app/advanced/headless/#:~:text=Headless%20mode%20allows%20you%20to,Built%2Din%20Terminal%E2%80%9D%20mode.) allows you to run a virtual machine in the background.
 
 ## Ubuntu Setup
 
