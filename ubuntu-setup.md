@@ -98,6 +98,8 @@ This creates a new SSH key using your email as a label.
   - Click Add SSH key.
 - If prompted, confirm access to your GitHub account.
 
+Note: GitHub Desktop uses HTTPS rather than SSH to connect.
+
 <!-- ## web dev
 nodejs
 google-cloud-cli -->

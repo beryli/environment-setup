@@ -69,7 +69,6 @@ After uninstalling the package, you can remove any unused dependencies by runnin
 ```sh
 brew autoremove
 ```
-<!-- To uninstall software and remove all unused dependencies, use `brew uninstall ${package_name}` or `brew uninstall --cask ${package_name}`, then run `brew autoremove`. -->
 ### Updating
 To update Homebrew and upgrade your installed packages, run the following command:
 ```sh
