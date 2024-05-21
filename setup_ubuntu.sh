@@ -18,13 +18,16 @@ sudo apt install -y \
     build-essential \
     openssh-server
 
-# Python and Java packages
+# Java packages
+sudo apt install -y \
+    default-jre \
+    default-jdk
+
+# Python packages
 # sudo apt install -y \
     # python3 \
     # python3-pip \
-    # python3-venv \
-    # default-jre \
-    # default-jdk
+    # python3-venv
 
 # Additional packages (optional)
 # sudo apt install -y \
