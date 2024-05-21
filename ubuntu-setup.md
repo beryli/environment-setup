@@ -12,12 +12,12 @@ This repository contains information on the settings, tools, and applications I 
   - [Installation and Verification](#installation-and-verification)
   - [Firewall Configuration (UFW)](#firewall-configuration-ufw)
   - [Connecting to the Server](#connecting-to-the-server)
-- [Git](#git)
 - [GitHub](#github)
   - [SSH key](#ssh-key)
     - [Generating a New SSH Key](#generating-a-new-ssh-key)
     - [Adding the SSH Key to the ssh-agent](#adding-the-ssh-key-to-the-ssh-agent)
     - [Adding the SSH Key to Your GitHub Account](#adding-the-ssh-key-to-your-github-account)
+- [Eclipse](#eclipse)
 
 
 ## Installation
@@ -95,6 +95,29 @@ This creates a new SSH key using your email as a label.
 - If prompted, confirm access to your GitHub account.
 
 Note: GitHub Desktop uses HTTPS rather than SSH to connect.
+
+## Eclipse
+- Download Eclipse Installer from [Eclipse downloads page](https://www.eclipse.org/downloads/packages/installer).
+- Extract the Installer with `tar -xzf eclipse-inst-jre-linux-aarch64.tar.gz`.
+- Navigate to the installer directory with `cd eclipse-installer`, and then run the installer `./eclipse-inst` with GUI.
+  - Select Eclipse IDE for Java Developers.
+  - Ensure you have a Java 17+ VM (e.g., JRE 21).
+  - Set the installation folder to the default /home/<your-username>/eclipse/java-2024-03.
+  - Check the options to Create start menu entry/desktop shortcut.
+  - Click Install all and accept.
+- Configure Eclipse Settings.
+  - Go to Window > Preferences.
+  - Navigate to General > Appearance.
+  - Select Theme and choose Dark.
+  - Click Apply and Close.
+- Launch Eclipse.
+  - Start Eclipse from your applications menu or using the terminal with `~/eclipse/java-2024-03/eclipse/eclipse`.
+  - Select a workspace directory.
+  - Set up a new Java project:
+    - Go to the Package Explorer view.
+    - Right-click and select New > Java Project.
+    - Enter your desired Project Name.
+    - Click Finish.
 
 <!-- ## web dev
 nodejs
