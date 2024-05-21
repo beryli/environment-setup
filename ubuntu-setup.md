@@ -18,6 +18,9 @@ This repository contains information on the settings, tools, and applications I 
     - [Adding the SSH Key to the ssh-agent](#adding-the-ssh-key-to-the-ssh-agent)
     - [Adding the SSH Key to Your GitHub Account](#adding-the-ssh-key-to-your-github-account)
 - [Eclipse](#eclipse)
+  - [Installation](#installation-1)
+  - [Configuration](#configuration)
+  - [Usage](#usage)
 
 
 ## Installation
@@ -97,6 +100,7 @@ This creates a new SSH key using your email as a label.
 Note: GitHub Desktop uses HTTPS rather than SSH to connect.
 
 ## Eclipse
+### Installation
 - Download Eclipse Installer from [Eclipse downloads page](https://www.eclipse.org/downloads/packages/installer).
 - Extract the Installer with `tar -xzf eclipse-inst-jre-linux-aarch64.tar.gz`.
 - Navigate to the installer directory with `cd eclipse-installer`, and then run the installer `./eclipse-inst` with GUI.
@@ -105,19 +109,30 @@ Note: GitHub Desktop uses HTTPS rather than SSH to connect.
   - Set the installation folder to the default /home/<your-username>/eclipse/java-2024-03.
   - Check the options to Create start menu entry/desktop shortcut.
   - Click Install all and accept.
+### Configuration
 - Configure Eclipse Settings.
   - Go to Window > Preferences.
   - Navigate to General > Appearance.
   - Select Theme and choose Dark.
   - Click Apply and Close.
-- Launch Eclipse.
+### Usage
+- Launch Eclipse:
   - Start Eclipse from your applications menu or using the terminal with `~/eclipse/java-2024-03/eclipse/eclipse`.
   - Select a workspace directory.
-  - Set up a new Java project:
-    - Go to the Package Explorer view.
-    - Right-click and select New > Java Project.
-    - Enter your desired Project Name.
-    - Click Finish.
+- Set up a new Java project:
+  - Go to the Package Explorer view.
+  - Right-click and select New > Java Project.
+  - Enter your desired Project Name.
+  - Click Finish.
+- Create a New Java Class:
+  - Right-click on the src folder in your project.
+  - Go to New > Class.
+  - Enter the name of your class and check the box to include the public static void main(String[] args) method if you want to create an executable program. Click Finish.
+- Run Your Java Program:
+  - Click the Run button on the toolbar (green circle with a white arrow) or right-click on your class in the Project Explorer and select Run As > Java Application.
+  - Your program will compile and run. The output will be displayed in the Console view at the bottom of the Eclipse window.
+
+Note: If you encounter the error "must declare a named package eclipse because this compilation unit is associated to the named module x." simply delete module-info.java in your Project Explorer tab. For more details, refer to this [Stack Overflow post](https://stackoverflow.com/questions/53033899/must-declare-a-named-package-eclipse-because-this-compilation-unit-is-associated).
 
 <!-- ## web dev
 nodejs
