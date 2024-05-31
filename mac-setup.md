@@ -30,7 +30,7 @@ This repository contains information on the settings, tools, and applications I 
   - Install Microsoft 365 for productivity applications.
 
 ## Homebrew
-[Homebrew](https://brew.sh/) is a Package Manager for macOS. 
+[Homebrew](https://brew.sh/) is a Package Manager for macOS.
 ### Installation
 To install Homebrew, follow these steps:
 - Open a macOS Terminal.

@@ -8,6 +8,7 @@ This repository contains information on the settings, tools, and applications I 
 - [APT](#apt)
   - [Installing software](#installing-software)
   - [Updating](#updating)
+- [Git](#git)
 - [SSH Server](#ssh-server)
   - [Installation and Verification](#installation-and-verification)
   - [Firewall Configuration (UFW)](#firewall-configuration-ufw)
@@ -55,6 +56,11 @@ To keep your system up-to-date:
 - Remove unused dependencies with `sudo apt autoremove`.
 - List all non-automatic installed packages with `apt list --installed | grep -v automatic`.
 
+## Git
+- List all Git configurations: `git config --list`.
+- Set the default editor to Vim: `git config --global core.editor "vim"`.
+- Create an alias for a compact log view: `git config --global alias.lg "log --oneline --graph --decorate --all"`.
+
 ## SSH Server
 Secure Shell (SSH) protocol allows secure command execution over an unsecured network.
 ### Installation and Verification
@@ -79,6 +85,7 @@ To generate a new SSH key and add it to the ssh-agent, follow these steps (summa
 #### Generating a New SSH Key
 - Open Terminal.
 - Generate a new SSH key with `ssh-keygen -t ed25519 -C "your_email@example.com"`. Replace your_email@example.com with your GitHub email address.
+  - Note: If you are using a legacy system that doesn't support the Ed25519 algorithm, use ` ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`.
 
 This creates a new SSH key using your email as a label.
 
@@ -88,11 +95,11 @@ This creates a new SSH key using your email as a label.
 
 #### Adding the SSH Key to Your GitHub Account
 - Display your SSH public key with `cat ~/.ssh/id_ed25519.pub` and then copy its contents.
-- Navigate to **Settings** in GitHub. 
+- Navigate to **Settings** in GitHub.
 - In the "Access" section of the sidebar, click **SSH and GPG keys**.
 - Click **New SSH key** or **Add SSH key**.
   - In the "Title" field, add a descriptive label for the new key.
-  - Select the type of key, either authentication or signing. 
+  - Select the type of key, either authentication or signing.
   - In the "Key" field, paste your public key.
   - Click Add SSH key.
 - If prompted, confirm access to your GitHub account.
