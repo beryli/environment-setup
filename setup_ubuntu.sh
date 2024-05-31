@@ -20,8 +20,8 @@ sudo apt install -y \
 
 # Java packages
 sudo apt install -y \
-    default-jre \
     default-jdk
+    # default-jre \\ No need to have JRE when you have JDK
 
 # Python packages
 # sudo apt install -y \
