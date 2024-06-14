@@ -19,6 +19,8 @@ This repository contains information on the settings, tools, and applications I 
     - [Adding the SSH Key to the ssh-agent](#adding-the-ssh-key-to-the-ssh-agent)
     - [Adding the SSH Key to Your GitHub Account](#adding-the-ssh-key-to-your-github-account)
 - [Git](#git)
+  - [Config](#config)
+  - [New Repo](#new-repo)
 
 ## Installation
 
@@ -118,9 +120,24 @@ Note: GitHub Desktop uses HTTPS rather than SSH to connect.
 
 ## Git
 
+Git is a distributed version control system that tracks versions of files. Here's a handy [cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf) provided by GitHub.
+
+### Config
+
 - List all Git configurations: `git config --list`.
 - Set the default editor to Vim: `git config --global core.editor "vim"`.
 - Create an alias for a compact log view: `git config --global alias.lg "log --oneline --graph --decorate --all"`.
+- `git config --global user.email "you@example.com"`
+- `git config --global user.name "Your Name"`
+
+### New Repo
+
+- `git init`
+- `git add --all`
+- `git commit -m "first commit"`
+- `git branch -M main`
+- `git remote add origin "URL"`
+- `git push -u origin main`
 
 <!-- ## web dev
 nodejs
