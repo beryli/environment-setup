@@ -1,1 +1,2 @@
+esbenp.prettier-vscode
 yzhang.markdown-all-in-one
