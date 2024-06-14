@@ -3,8 +3,8 @@
 ## Table of Contents <!-- omit in toc -->
 
 - [VSCode](#vscode)
-  - [Exporting Extensions List](#exporting-extensions-list)
-  - [Reinstalling Extension](#reinstalling-extension)
+  - [Passwordless SSH Login](#passwordless-ssh-login)
+  - [Extensions](#extensions)
 - [Eclipse](#eclipse)
   - [Installation](#installation)
   - [Configuration](#configuration)
@@ -12,13 +12,30 @@
 
 ## VSCode
 
-### Exporting Extensions List
+### Passwordless SSH Login
 
-VSCode provides a command to list all installed extensions. If you want to save the list to a file, you can redirect the output to a file: `code --list-extensions > vscode-extensions.txt`
+- Generate a new SSH key pair.
+- Copy the Public Key to the Remote Server.
+  - Display the content of your public key file using `cat ~/.ssh/id_ed25519.pub`.
+  - SSH into the remote server, and then append your public key to the ~/.ssh/authorized_keys file using `echo "your_public_key" >> ~/.ssh/authorized_keys`. Replace your_public_key with the content of the public key you copied earlier.
+  - Set the appropriate permissions for the ~/.ssh directory and authorized_keys file using `chmod 700 ~/.ssh` and `chmod 600 ~/.ssh/authorized_keys`.
+- Configure VS Code for Remote SSH.
+  - Choose the SSH configuration file to edit (typically ~/.ssh/config).
+  - Add a new Host entry in the configuration file.
 
-### Reinstalling Extension
+    ```text
+    Host remote_host
+        HostName remote_host
+        User username
+        IdentityFile ~/.ssh/id_ed25519
+    ```
 
-To reinstall the extensions on another machine, you can use the output file created by the above steps. For example, if you have a list of extensions in vscode-extensions.txt, you can install them using: `cat vscode-extensions.txt | xargs -L 1 code --install-extension`
+    Replace remote_host with the server's hostname or IP address and username with your username on the remote server.
+
+### Extensions
+
+- VSCode provides a command to list all installed extensions. If you want to save the list to a file, you can redirect the output to a file: `code --list-extensions > vscode-extensions.txt`
+- To reinstall the extensions on another machine, you can use the output file created by the above steps. For example, if you have a list of extensions in vscode-extensions.txt, you can install them using: `cat vscode-extensions.txt | xargs -L 1 code --install-extension`
 
 ## Eclipse
 
