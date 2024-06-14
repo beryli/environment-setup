@@ -2,7 +2,8 @@
 
 This repository contains information on the settings, tools, and applications I use on my Ubuntu.
 
-**Table of Contents**
+## Table of Contents <!-- omit in toc -->
+
 - [Installation](#installation)
 - [System Settings](#system-settings)
 - [APT](#apt)
@@ -19,8 +20,8 @@ This repository contains information on the settings, tools, and applications I 
     - [Adding the SSH Key to Your GitHub Account](#adding-the-ssh-key-to-your-github-account)
 - [Git](#git)
 
-
 ## Installation
+
 - Boot into Ubuntu (Try or Install Ubuntu) and select "Install Ubuntu" on the desktop.
 - Follow these steps:
   - Select language and keyboard layout.
@@ -33,58 +34,76 @@ This repository contains information on the settings, tools, and applications I 
 - Reboot.
 
 ## System Settings
+
 To adjust display scaling:
+
 - Go to System Settings.
 - Navigate to Displays.
 - Enable Fractional Scaling and set the desired scale.
 
 ## APT
+
 APT (Advanced Package Tool) is the primary command-line package manager for Debian and its derivatives.
 
 ### Installing software
+
 Use the [setup_ubuntu.sh](setup_ubuntu.sh) script to install necessary software.
+
 - Make the script executable with `chmod +x setup_ubuntu.sh`.
 - Execute it with `./setup_ubuntu.sh`.
 
 ### Updating
+
 To keep your system up-to-date:
+
 - Update package lists and upgrade packages with `sudo apt update && sudo apt upgrade`.
 - Remove unused dependencies with `sudo apt autoremove`.
 - List all non-automatic installed packages with `apt list --installed | grep -v automatic`.
 
 ## SSH Server
+
 Secure Shell (SSH) protocol allows secure command execution over an unsecured network.
+
 ### Installation and Verification
+
 - Install **openssh-server**.
 - Verify the SSH service is running with `sudo systemctl status ssh`.
 - If not running, enable and start the SSH server with `sudo systemctl enable --now ssh`.
 <!-- Note: The --now option starts the service immediately, so you don't need to run `sudo systemctl start ssh` separately. -->
 ### Firewall Configuration (UFW)
+
 - Check Firewall Status with `sudo ufw status`.
 - Enable UFW with `sudo ufw enable`.
 - Allow SSH Connections with `sudo ufw allow ssh`.
+
 ### Connecting to the Server
+
 - Connect to the server use `ssh -p port_number username@IP_address`. Replace port_number, username, and IP_address with your specific details.
 - To check your IP address, use `ip a` or `hostname -I`.
 
 Note: The default SSH port is 22. Port configuration changes, including modifying the sshd_config file, are omitted here.
 
 ## GitHub
+
 ### SSH key
+
 To generate a new SSH key and add it to the ssh-agent, follow these steps (summarized from [GitHub documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux)):
 
 #### Generating a New SSH Key
+
 - Open Terminal.
-- Generate a new SSH key with `ssh-keygen -t ed25519 -C "your_email@example.com"`. Replace your_email@example.com with your GitHub email address.
-  - Note: If you are using a legacy system that doesn't support the Ed25519 algorithm, use ` ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`.
+- Generate a new SSH key with `ssh-keygen -t ed25519 -C "your_email@example.com"`.
+  - Note: If you are using a legacy system that doesn't support the Ed25519 algorithm, use `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`.
 
 This creates a new SSH key using your email as a label.
 
 #### Adding the SSH Key to the ssh-agent
+
 - Start the ssh-agent in the background with `eval "$(ssh-agent -s)"`.
 - Add your SSH private key to the ssh-agent with `ssh-add ~/.ssh/id_ed25519`.
 
 #### Adding the SSH Key to Your GitHub Account
+
 - Display your SSH public key with `cat ~/.ssh/id_ed25519.pub` and then copy its contents.
 - Navigate to **Settings** in GitHub.
 - In the "Access" section of the sidebar, click **SSH and GPG keys**.
@@ -98,10 +117,10 @@ This creates a new SSH key using your email as a label.
 Note: GitHub Desktop uses HTTPS rather than SSH to connect.
 
 ## Git
+
 - List all Git configurations: `git config --list`.
 - Set the default editor to Vim: `git config --global core.editor "vim"`.
 - Create an alias for a compact log view: `git config --global alias.lg "log --oneline --graph --decorate --all"`.
-
 
 <!-- ## web dev
 nodejs

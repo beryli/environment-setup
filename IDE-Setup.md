@@ -1,6 +1,7 @@
 # IDE Setup <!-- omit in toc -->
 
-**Table of Contents**
+## Table of Contents <!-- omit in toc -->
+
 - [VSCode](#vscode)
   - [Exporting Extensions List](#exporting-extensions-list)
   - [Reinstalling Extension](#reinstalling-extension)
@@ -10,28 +11,38 @@
   - [Usage](#usage)
 
 ## VSCode
+
 ### Exporting Extensions List
+
 VSCode provides a command to list all installed extensions. If you want to save the list to a file, you can redirect the output to a file: `code --list-extensions > vscode-extensions.txt`
+
 ### Reinstalling Extension
+
 To reinstall the extensions on another machine, you can use the output file created by the above steps. For example, if you have a list of extensions in vscode-extensions.txt, you can install them using: `cat vscode-extensions.txt | xargs -L 1 code --install-extension`
 
 ## Eclipse
+
 ### Installation
+
 - Download Eclipse Installer from [Eclipse downloads page](https://www.eclipse.org/downloads/packages/installer).
 - Extract the Installer with `tar -xzf eclipse-inst-jre-linux-aarch64.tar.gz`.
 - Navigate to the installer directory with `cd eclipse-installer`, and then run the installer `./eclipse-inst` with GUI.
   - Select Eclipse IDE for Java Developers.
   - Ensure you have a Java 17+ VM (e.g., JRE 21).
-  - Set the installation folder to the default /home/<your-username>/eclipse/java-2024-03.
+  - Set the installation folder to the default /home/${your-username}/eclipse/java-2024-03.
   - Check the options to Create start menu entry/desktop shortcut.
   - Click Install all and accept.
+
 ### Configuration
+
 - Configure Eclipse Settings.
   - Go to Window > Preferences.
   - Navigate to General > Appearance.
   - Select Theme and choose Dark.
   - Click Apply and Close.
+
 ### Usage
+
 - Launch Eclipse:
   - Start Eclipse from your applications menu or using the terminal with `~/eclipse/java-2024-03/eclipse/eclipse`.
   - Select a workspace directory.
