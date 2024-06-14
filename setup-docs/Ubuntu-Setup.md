@@ -6,7 +6,7 @@ This repository contains information on the settings, tools, and applications I 
 
 - [Installation](#installation)
 - [System Settings](#system-settings)
-- [APT](#apt)
+- [Advanced Package Tool (APT)](#advanced-package-tool-apt)
   - [Installing software](#installing-software)
   - [Updating](#updating)
 - [SSH Server](#ssh-server)
@@ -43,7 +43,7 @@ To adjust display scaling:
 - Navigate to Displays.
 - Enable Fractional Scaling and set the desired scale.
 
-## APT
+## Advanced Package Tool (APT)
 
 APT (Advanced Package Tool) is the primary command-line package manager for Debian and its derivatives.
 
