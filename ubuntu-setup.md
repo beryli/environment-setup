@@ -18,6 +18,9 @@ This repository contains information on the settings, tools, and applications I 
     - [Generating a New SSH Key](#generating-a-new-ssh-key)
     - [Adding the SSH Key to the ssh-agent](#adding-the-ssh-key-to-the-ssh-agent)
     - [Adding the SSH Key to Your GitHub Account](#adding-the-ssh-key-to-your-github-account)
+- [VSCode](#vscode)
+  - [Exporting Extensions List](#exporting-extensions-list)
+  - [Reinstalling Extension](#reinstalling-extension)
 - [Eclipse](#eclipse)
   - [Installation](#installation-1)
   - [Configuration](#configuration)
@@ -105,6 +108,12 @@ This creates a new SSH key using your email as a label.
 - If prompted, confirm access to your GitHub account.
 
 Note: GitHub Desktop uses HTTPS rather than SSH to connect.
+
+## VSCode
+### Exporting Extensions List
+VSCode provides a command to list all installed extensions. If you want to save the list to a file, you can redirect the output to a file: `code --list-extensions > vscode-extensions.txt`
+### Reinstalling Extension
+To reinstall the extensions on another machine, you can use the output file created by the above steps. For example, if you have a list of extensions in vscode-extensions.txt, you can install them using: `cat vscode-extensions.txt | xargs -L 1 code --install-extension`
 
 ## Eclipse
 ### Installation
