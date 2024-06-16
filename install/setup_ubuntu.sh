@@ -41,5 +41,6 @@ code --install-extension shardulm94.trailing-spaces
 code --install-extension oderwat.indent-rainbow           # highlight
 code --install-extension donjayamanne.githistory          # git
 code --install-extension mhutchie.git-graph
+code --install-extension eamodio.gitlens
 
 echo "Installation completed."
