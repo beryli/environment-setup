@@ -14,4 +14,4 @@
     "rgba(255,127,255,0.3)",
     "rgba(79,236,236,0.3)"],
   "remote.SSH.configFile": "~/.ssh/config"
-  }
+}
