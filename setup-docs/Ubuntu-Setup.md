@@ -49,7 +49,7 @@ APT (Advanced Package Tool) is the primary command-line package manager for Debi
 
 ### Installing software
 
-Use the [setup_ubuntu.sh](setup_ubuntu.sh) script to install necessary software.
+Use the [setup_ubuntu.sh](../install/setup_ubuntu.sh) script to install necessary software.
 
 - Make the script executable with `chmod +x setup_ubuntu.sh`.
 - Execute it with `./setup_ubuntu.sh`.

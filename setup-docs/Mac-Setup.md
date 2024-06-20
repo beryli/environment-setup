@@ -116,4 +116,4 @@ brew bundle dump
 brew bundle
 ```
 
-[Download my minimal essential bundle](Brewfile)
+[Download my minimal essential bundle](../install/Brewfile)
