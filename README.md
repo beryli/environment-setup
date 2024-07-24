@@ -24,13 +24,20 @@ This repository contains information on the settings, tools, and applications I 
 
 ### Settings
 
-- For Retina Mode, navigate to Settings -> Display.
+- Devices - Display
+  - Hardware
+    - Emulated Display Card: virtio-gpu-gi-pci (GPU Supported)
+    - Turn on "Resize display to window size automatically"
+  - Scaling
+    - Upscaling: Nearest Neighbor
+    - Downscaling: Linear
+    - Turn on "Retina Mode"
 - [Headless mode](https://docs.getutm.app/advanced/headless/#:~:text=Headless%20mode%20allows%20you%20to,Built%2Din%20Terminal%E2%80%9D%20mode.) allows you to run a virtual machine in the background.
 
 ## Ubuntu Setup
 
-For detailed instructions on setting up your Ubuntu environment, please refer to [ubuntu-setup.md](ubuntu-setup.md).
+For detailed instructions on setting up your Ubuntu environment, please refer to [Ubuntu-Setup.md](docs/Ubuntu-Setup.md).
 
 ## Mac Setup
 
-For detailed instructions on setting up your Mac environment, please refer to [mac-setup.md](mac-setup.md).
+For detailed instructions on setting up your Mac environment, please refer to [Mac-Setup.md](docs/Mac-Setup.md).

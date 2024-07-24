@@ -34,13 +34,14 @@ sudo apt install -y \
 #     <package-name>
 
 # VSCode
+# general
 code --install-extension yzhang.markdown-all-in-one       # markdown
 code --install-extension davidanson.vscode-markdownlint
-code --install-extension esbenp.prettier-vscode           # format
-code --install-extension shardulm94.trailing-spaces
+code --install-extension shardulm94.trailing-spaces       # format
 code --install-extension oderwat.indent-rainbow           # highlight
-code --install-extension donjayamanne.githistory          # git
-code --install-extension mhutchie.git-graph
+code --install-extension mhutchie.git-graph               # git
+# development
 code --install-extension eamodio.gitlens
+code --install-extension vscjava.vscode-java-pack
 
 echo "Installation completed."

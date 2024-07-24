@@ -2,7 +2,7 @@
   "editor.fontSize": 14,
   "workbench.colorTheme": "Visual Studio Dark",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.panel.defaultLocation": "right",
+  "workbench.panel.defaultLocation": "bottom",
   "workbench.activityBar.location": "top",
   "workbench.startupEditor": "none",
   "window.zoomLevel": 1,
