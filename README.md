@@ -15,7 +15,7 @@ This repository contains information on the settings, tools, and applications I 
 
 ### Downloading ISO image
 
-- https://ubuntu.com/download/server/arm
+- <https://ubuntu.com/download/server/arm>
 
 ### Creating a new virtual machine
 
